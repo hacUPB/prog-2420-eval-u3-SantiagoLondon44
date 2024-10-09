@@ -14,19 +14,19 @@
 
 ## Uso del Programa
 
-### Agregar auto: 
-Permite añadir un auto al inventario disponible para la renta.
+### Agregar vehiculo: 
+Permite añadir un vehiculo al inventario disponible para la renta.
 ### Agregar cliente:
  Registra un nuevo cliente en el sistema.
 ### Realizar reserva: 
-Permite a un cliente existente rentar un auto disponible.
-### Mostrar estado de autos: 
-Muestra una lista de autos disponibles y autos rentados.
+Permite a un cliente existente rentar un vehiculo disponible.
+### Mostrar estado de vehiculos: 
+Muestra una lista de vehiculos disponibles y vehiculos rentados.
 ### Salir: 
 Finaliza la ejecución del programa.
 
 ## Ejemplos
 
--Al seleccionar la opción "Agregar auto" e ingresar Toyota Corolla, el auto se añadirá a la lista de autos disponibles.
+-Al seleccionar la opción "Agregar vehiculo" e ingresar Toyota Corolla, el vehiculo se añadirá a la lista de autos disponibles.
 
 -Si un cliente Juan Pérez realiza una reserva de un Toyota Corolla, el sistema actualizará el estado del auto a rentado.
