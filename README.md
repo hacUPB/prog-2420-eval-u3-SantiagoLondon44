@@ -32,4 +32,75 @@ El sistema de STAR CAR REN-A-CAR es muy productivo y eficaz para cualquier negoc
 - **Listas:** Para almacenar la lista de vehículos y la lista de clientes.
 - **Diccionarios:** Para gestionar las reservas, enlazando clientes con los autos que han rentado.
 
-## DIAGRAMA DE FLUJO
+## PSEUDO CÓDIGO
+
+INICIO del programa
+
+DEFINIR lista vehiculoss
+DEFINIR lista clientes
+DEFINIR diccionario reservas
+
+FUNCIÓN agregar_vehiculos()
+    PEDIR al usuario que ingrese el modelo del vehiculos
+    AÑADIR el vehiculos a la lista de vehiculoss
+    MOSTRAR mensaje confirmando que el vehiculos fue agregado
+
+FUNCIÓN agregar_cliente()
+    PEDIR al usuario que ingrese el nombre del cliente
+    AÑADIR el cliente a la lista de clientes
+    MOSTRAR mensaje confirmando que el cliente fue agregado
+
+FUNCIÓN realizar_reserva()
+    PEDIR al usuario que ingrese el nombre del cliente
+    SI el cliente no está en la lista de clientes
+        MOSTRAR mensaje de error y pedir que lo registre primero
+        SALIR de la función
+    FIN SI
+
+    PEDIR al usuario que ingrese el modelo del vehiculos a reservar
+    SI el vehiculos no está en la lista de vehiculoss
+        MOSTRAR mensaje de error y que el vehiculos no está disponible
+        SALIR de la función
+    FIN SI
+
+    ASIGNAR el vehiculos al cliente en el diccionario reservas
+    ELIMINAR el vehiculos de la lista de vehiculoss disponibles
+    MOSTRAR mensaje confirmando que la reserva se ha realizado con éxito
+
+FUNCIÓN mostrar_estado_vehiculoss()
+    MOSTRAR todos los vehiculoss disponibles en la lista de vehiculoss
+    MOSTRAR todos los vehiculoss rentados y sus respectivos clientes del diccionario reservas
+
+FUNCIÓN menu_principal()
+    MIENTRAS el programa esté en ejecución
+        MOSTRAR el menú de opciones:
+            1. Agregar vehiculos
+            2. Agregar cliente
+            3. Realizar reserva
+            4. Mostrar estado de vehiculoss
+            5. Salir
+        LEER opción seleccionada por el usuario
+
+        SI la opción es '1'
+            LLAMAR a la función agregar_vehiculos()
+        SINO SI la opción es '2'
+            LLAMAR a la función agregar_cliente()
+        SINO SI la opción es '3'
+            LLAMAR a la función realizar_reserva()
+        SINO SI la opción es '4'
+            LLAMAR a la función mostrar_estado_vehiculoss()
+        SINO SI la opción es '5'
+            MOSTRAR mensaje de salida
+            TERMINAR el bucle
+        SINO
+            MOSTRAR mensaje de opción no válida
+        FIN SI
+    FIN MIENTRAS
+
+LLAMAR a la función menu_principal()
+
+FIN del programa
+
+
+
+   
